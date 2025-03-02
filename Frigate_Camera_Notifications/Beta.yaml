@@ -1111,6 +1111,7 @@ action:
                                   name: "{{sound}}"
                                   volume: "{{ iif(sound == 'none', 0, volume) }}"
                                   critical: "{{ iif(critical, 1, 0) }}"
+                                interruption-level: "time-sensitive"
                               entity_id: "{{ios_live_view}}"
                               # Actions
                               actions:
@@ -1166,6 +1167,7 @@ action:
                                     name: "{{sound}}"
                                     volume: "{{ iif(sound == 'none', 0, volume) }}"
                                     critical: "{{ iif(critical, 1, 0) }}"
+                                  interruption-level: "time-sensitive"
                                 entity_id: "{{ios_live_view}}"
                                 # Actions
                                 actions:
@@ -1219,6 +1221,7 @@ action:
                                 name: "{{sound}}"
                                 volume: "{{ iif(sound == 'none', 0, volume) }}"
                                 critical: "{{ iif(critical, 1, 0) }}"
+                              interruption-level: "time-sensitive"
                             entity_id: "{{ios_live_view}}"
                             # Actions
                             actions:
@@ -1459,6 +1462,7 @@ action:
                                         name: "{{ iif(update, 'none', sound) }}"
                                         volume: "{{ iif((update or sound == 'none'), 0, volume) }}"
                                         critical: "{{ iif(critical, 1, 0) }}"
+                                      interruption-level: "time-sensitive"
                                     entity_id: "{{ios_live_view}}"
                                     # Actions
                                     actions:
@@ -1516,6 +1520,7 @@ action:
                                           name: "{{ iif(update, 'none', sound) }}"
                                           volume: "{{ iif((update or sound == 'none'), 0, volume) }}"
                                           critical: "{{ iif(critical, 1, 0) }}"
+                                        interruption-level: "time-sensitive"
                                       entity_id: "{{ios_live_view}}"
                                       # Actions
                                       actions:
@@ -1570,6 +1575,7 @@ action:
                                       name: "{{ iif(update, 'none', sound) }}"
                                       volume: "{{ iif((update or sound == 'none'), 0, volume) }}"
                                       critical: "{{ iif(critical, 1, 0) }}"
+                                    interruption-level: "time-sensitive"
                                   entity_id: "{{ios_live_view}}"
                                   # Actions
                                   actions:
