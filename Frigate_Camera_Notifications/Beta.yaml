@@ -917,7 +917,6 @@ action:
         conditions:
           - condition: trigger
             id: "frigate-event"
-          - "{{ is_state(this.entity_id, 'on') }}"
           - "{{ not this.attributes.last_triggered or (now() - this.attributes.last_triggered).seconds > cooldown }}"
           - "{{ not disable_times|length or not now().hour in disable_times|map('int')|list }}"
           - "{{ type|select('in', 'new')|list|length>0 }}"
